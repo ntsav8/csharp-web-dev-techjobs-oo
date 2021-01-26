@@ -24,7 +24,7 @@ namespace TechJobsOO
             {
 
                 Console.WriteLine(job);
-                Console.WriteLine("                     ");
+                
                 
             }
 
