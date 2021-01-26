@@ -7,6 +7,8 @@ namespace TechJobsTests
     [TestClass]
     public class JobTests
     {
+        private object filePath;
+
         [TestMethod]
         public void TestSettingJobId()
         {
@@ -48,11 +50,21 @@ namespace TechJobsTests
         {
             Job objectFour = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"),
                new CoreCompetency("Persistence"));
+
+            
             {
                 string outputExpected = $"ID: {objectFour.Id} \n Name: {objectFour.Name} \n  " +
                     $"Employer: {objectFour.EmployerName} \n Location: {objectFour.EmployerLocation} \n" +
-                    $"PositionType: {objectFour.JobType} \n CoreCompentency: {objectFour.JobCoreCompetency}";
+                    $"PositionType: {objectFour.JobType} \n CoreCompentency: {objectFour.JobCoreCompetency} \n";
+                   
+
+
                 Assert.AreEqual(outputExpected, objectFour.ToString());
+                StringAssert.EndsWith(a.ToString(), "\n");
+               
+
+
+
             }
         }
     }

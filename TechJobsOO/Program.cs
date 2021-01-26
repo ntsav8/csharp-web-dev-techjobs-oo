@@ -9,9 +9,11 @@ namespace TechJobsOO
         {
 
             Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+            Console.WriteLine("                ");
             Job job2 = new Job("Web Developer", new Employer("LaunchCode"), new Location("St. Louis"), new PositionType("Front-end developer"), new CoreCompetency("JavaScript"));
+            Console.WriteLine("                ");
             Job job3 = new Job("Ice cream tester", new Employer(""), new Location("Home"), new PositionType("UX"), new CoreCompetency("Tasting ability"));
-
+            Console.WriteLine("                ");
             List<Job> jobs = new List<Job>();
 
             jobs.Add(job1);
@@ -20,7 +22,10 @@ namespace TechJobsOO
 
             foreach (Job job in jobs)
             {
+
                 Console.WriteLine(job);
+                Console.WriteLine("                     ");
+                
             }
 
         }
