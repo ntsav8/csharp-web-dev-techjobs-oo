@@ -62,7 +62,7 @@ namespace TechJobsOO
 
             string output = $"ID: {Id} \n Name:{Name} \n Employer:{EmployerName.Value} \n " +
                 $"Location:{EmployerLocation.Value} \n PositionType: {JobType.Value} \n " +
-                $"CoreCompentency: {JobCoreCompetency.Value}";
+                $"CoreCompentency: {JobCoreCompetency.Value}\n";
 
             return output;
         }
